@@ -1,16 +1,15 @@
-import { useState } from 'react';
+import { Dashboard } from 'components/Dashboard';
+import { Footer } from 'components/Footer';
+import { Header } from 'components/Header';
 
-import { GlobalStyle } from './globalStyles';
-
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
+import { GlobalStyle } from 'globalStyles';
 
 export function App() {
   return (
     <>
       <GlobalStyle />
       <Header />
-
+      <Dashboard />
       <Footer />
     </>
   );

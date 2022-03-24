@@ -4,5 +4,5 @@ import { App } from './App';
 test('sum', () => {
   const { getByText } = render(<App />);
 
-  expect(getByText('Hello World!')).toHaveAttribute('class', 'teste');
+  expect(getByText('Developed by:')).toBeInTheDocument();
 });
