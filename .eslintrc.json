@@ -25,6 +25,7 @@
   ],
   "rules": {
     "import/no-unresolved": "error",
+    "jsx-a11y/label-has-associated-control": "off",
     "import/prefer-default-export": "off",
     "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.spec.js", "**/*.spec.jsx", "**/*.spec.ts", "**/*.spec.tsx"]}],
     "react/jsx-filename-extension": [

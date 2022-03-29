@@ -1,12 +1,10 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { BeerList } from '.';
 
-describe('Header Component', async () => {
-  it('should render all the header images', () => {
+describe('Beer List component', () => {
+  it('should render at least one beer', () => {
     render(<BeerList />);
 
-    await waitFor(() => {
-      expect(screen.findAllByTestId('beer-item'));
-    });
+    expect(screen.findByText('IBU'));
   });
 });

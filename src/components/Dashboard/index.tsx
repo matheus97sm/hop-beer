@@ -6,9 +6,13 @@ import { DashboardWrapper } from './styles';
 export function Dashboard() {
   return (
     <BeersProvider>
-      <DashboardWrapper>
-        <BeerList />
-        <SideBar />
+      <DashboardWrapper className="container">
+        <h1>Every beer around the world</h1>
+
+        <div>
+          <SideBar />
+          <BeerList />
+        </div>
       </DashboardWrapper>
     </BeersProvider>
   );
